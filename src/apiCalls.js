@@ -1,9 +1,10 @@
 import axios from 'axios';
 const URL = "https://urlshortdev.herokuapp.com/api/"
+const URLget = "/cors-proxy/https://urlshortdev.herokuapp.com/api/"
 
 
 export const checkURL = async (shortURL) => {
-    let body = await axios.get(URL + "shortUrl");
+    let body = await axios.get(URLget + "shortUrl");
     let flag = 0;
     body.data["allUrls"].forEach(element => {
         if (element["shortUrl"] === shortURL) {
