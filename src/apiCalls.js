@@ -1,5 +1,5 @@
 import axios from 'axios';
-const URL = "/cors-proxy/https://urlshortdev.herokuapp.com/api/"
+const URL = "https://urlshortdev.herokuapp.com/api/"
 
 
 export const checkURL = async (shortURL) => {
