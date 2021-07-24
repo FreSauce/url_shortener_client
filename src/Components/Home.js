@@ -13,14 +13,15 @@ import { addURL, checkURL } from "../apiCalls";
 const Hello = () => {
     const submitHandler = (e) => {
         e.preventDefault();
-        checkURL().then(flag => {
-            if(flag === 0){
-                addURL(e.target[0].value, e.target[1].value);
-            }
-            else {
-                alert("URL already exists");
-            }
-        })
+        // checkURL().then(flag => {
+        //     if(flag === 0){
+        //         addURL(e.target[0].value, e.target[1].value);
+        //     }
+        //     else {
+        //         alert("URL already exists");
+        //     }
+        // })
+        addURL(e.target[0].value, e.target[1].value);
         console.log(e.target[0].value);
         console.log(e.target[1].value);
     };
