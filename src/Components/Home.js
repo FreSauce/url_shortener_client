@@ -8,7 +8,7 @@ import {
     InputGroup,
 } from "react-bootstrap";
 
-import { addURL, checkURL } from "../apiCalls";
+import { addURL } from "../apiCalls";
 
 const Hello = () => {
     const submitHandler = (e) => {
