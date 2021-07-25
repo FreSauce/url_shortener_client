@@ -34,7 +34,7 @@ const Hello = () => {
                         <FormControl type="text" placeholder="Enter URL" />
                         <InputGroup className="mb-3">
                             <InputGroup.Text id="basic-addon3">
-                                https://sampledomain.com/
+                            https://shorturlf.netlify.app/
                             </InputGroup.Text>
                             <FormControl
                                 type="text"
